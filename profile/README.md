@@ -1,77 +1,98 @@
 # AIGen Game
 
-![AIGen Game icon](assets/aigengame-hero.png)
+![AIGen Game hero](assets/aigengame-hero.png)
 
-**The AI-powered game dev framework.**
+**The AI-powered agentic game dev framework.**
 
 **Harnessing the AI-Eigen space for precise and instant game generation.**
 
-AIGen Game is a framework for turning game ideas into playable systems through AI-native development workflows. It treats game creation as a structured generative space: mechanics, assets, rules, tools, scenes, feedback loops, and production intent become coordinates that AI agents can explore, refine, and transform into working game experiences.
+AIGen Game is an ecosystem for AI-powered game development. It brings together an agentic game-dev framework, a reusable agent workflow orchestrator, and engine-facing automation so game ideas can move from intent to playable systems with speed and control.
 
-The goal is not just to generate a one-off prototype. AIGen Game is designed around repeatable game development: describing intent, decomposing work, applying specialized skills, coordinating agents, connecting tools, and iterating toward a precise result.
+The core idea is simple: game creation is a structured generative space. Mechanics, assets, rules, player experience, production phases, and engine operations are not isolated tasks. They are coordinates in an AI-Eigen space that agents can navigate, transform, and refine.
 
-## Why AIGen Game
+AIGen Game exists to make that space usable.
 
-Modern game creation is no longer only about writing code faster. It is about orchestrating the full creative and technical loop: design, implementation, assets, testing, balancing, documentation, and iteration.
+## What It Is
 
-AIGen Game brings these steps into one AI-powered framework. It helps creators and teams move from concept to playable output with more speed, more control, and less friction.
+AIGen Game is not only a prompt-to-game tool. It is an entry point into a small family of projects for **agentic game creation**.
 
-## Core Ideas
+The projects have distinct roles:
+
+1. **godot-agent** is an independent tool for driving the Godot engine through CLI and MCP.
+2. **cli-agentic-workflow** is an independent tool for orchestrating AI agent workflows.
+3. **meta-game** is the agentic game-dev framework that integrates both tools with professional game-making skills, asset pipelines, and phase-driven production.
+
+Together, they turn AI generation into a directed development process rather than a one-shot output.
+
+## Projects
+
+| Project | Role in AIGen Game | Description |
+| --- | --- | --- |
+| [aigengame/meta-game](https://github.com/aigengame/meta-game) | Integrated agentic game-dev framework | An agentic 2D game maker that provides professional game-dev skills, asset-processing pipelines, reusable workflows, phase-driven lifecycle management, and human-in-the-loop feedback. It integrates `cli-agentic-workflow` and `godot-agent` as part of the production flow. |
+| [aigengame/cli-agentic-workflow](https://github.com/aigengame/cli-agentic-workflow) | Independent workflow orchestration tool | A lightweight local-first CLI that orchestrates AI agent CLIs such as Claude and Codex into inspectable workflows defined with simple YAML. |
+| [aigengame/godot-agent](https://github.com/aigengame/godot-agent) | Independent Godot automation tool | An agent-first CLI and MCP server that lets AI agents drive the Godot engine with structured output built for programmatic consumption. |
+
+## How The Pieces Fit
+
+**godot-agent** is the engine bridge. It lets agents operate Godot through CLI and MCP, with structured output that workflows can consume reliably. It can be used on its own wherever agent-controlled Godot automation is useful.
+
+**cli-agentic-workflow** is the orchestration bridge. It turns agent work into repeatable runs: plan the graph, validate it, execute it, resume it, and report what happened. It can be used independently for any local-first agent workflow.
+
+**Meta Game** is the integrated game-dev framework. It provides the game-making method: professional skills, asset-processing pipelines, reusable workflows, phase-driven lifecycle management, and human-in-the-loop feedback. It can use `cli-agentic-workflow` to coordinate agents and `godot-agent` to execute work inside Godot.
+
+In short:
+
+```text
+Intent -> Meta Game -> Skills + Asset Pipelines + Phase Management
+       -> cli-agentic-workflow -> Agentic Workflow Runs
+       -> godot-agent -> Godot Engine
+       -> Playable Game
+```
+
+## Core Concepts
 
 ### AI-Eigen Space
 
-AIGen connects AI generation with the idea of an eigen space: a structured space of meaningful directions. Instead of treating generation as random output, AIGen Game aims to guide generation along the important dimensions of a game: genre, mechanics, pacing, world rules, style, constraints, and player experience.
+AIGen Game uses the idea of an AI-Eigen space as a product metaphor for controlled generation. Instead of asking AI for random game output, the framework aims to guide generation along meaningful game-development dimensions: genre, mechanics, style, pacing, constraints, tools, and production state.
 
-This is the brand idea behind the slogan: precise and instant generation comes from controlling the space, not just prompting the model.
+Precision comes from controlling the space.
 
 ### AI Agents
 
-AI agents act as focused collaborators inside the framework. Different agents can reason about design, implementation, assets, testing, refactoring, or production flow. Each agent has a role, a context, and a goal.
-
-The framework is built for coordinated work, not isolated responses.
+Agents are focused collaborators. They can reason about design, implementation, assets, testing, review, documentation, or production flow. AIGen Game treats agents as participants in a workflow, not as isolated chat responses.
 
 ### Agentic Workflow
 
-AIGen Game uses agentic workflows to move game development forward step by step. A high-level loop looks like this:
+Agentic workflows give structure to AI work. They define what should happen, when it should happen, which agent or tool should handle it, and where human approval belongs.
 
-1. Define the game intent.
-2. Break the intent into actionable work.
-3. Route work to the right agents and skills.
-4. Generate, inspect, and refine outputs.
-5. Feed results back into the next iteration.
-
-This creates a development process where AI can participate in planning, building, reviewing, and improving the game.
+This is how AIGen Game keeps generation fast without making it random or opaque.
 
 ### Skills
 
-Skills are reusable capabilities that make agents better at specific kinds of work. A skill might help with level design, gameplay mechanics, pixel art direction, playtesting, documentation, or engine-specific workflows.
+Skills capture reusable game-dev knowledge: design patterns, art direction, asset processing, engineering practices, QA habits, playtest loops, and production rituals.
 
-Skills give the framework memory, consistency, and craft. They turn repeated patterns into stronger building blocks.
+They help agents work with consistency and craft across repeated projects.
 
 ### MCP
 
-MCP connects agents to tools, services, files, engines, editors, and external systems. For AIGen Game, this means AI workflows can become part of a real development environment instead of staying inside a chat window.
+MCP connects agents to real tools and environments. In AIGen Game, MCP is part of the bridge between agentic reasoning and concrete game-making actions, especially when agents need to inspect, control, or automate external systems.
 
-The result is a framework that can reason, act, inspect, and iterate across the game development stack.
+## Product Direction
 
-## Product Experience
+AIGen Game is designed for creators and developers who want AI to become part of the game development process itself.
 
-AIGen Game is designed to feel like a creative control surface for AI-powered game development.
+The framework should feel:
 
-You describe what you want to build. The framework maps that intent into a structured workflow. Agents and skills help generate the pieces. Connected tools make the work concrete. The system keeps the process iterative, inspectable, and directed.
-
-The experience should feel fast, but not careless. Generative, but not random. Automated, but still guided by the creator.
+- **Fast**, but guided.
+- **Generative**, but inspectable.
+- **Automated**, but human-directed.
+- **Technical**, but product-oriented.
+- **Agentic**, but grounded in real game-dev workflows.
 
 ## Brand Direction
 
-The visual direction centers on a game controller generated through a matrix warp. The controller represents game creation. The matrix represents AI-Eigen space. The warp represents instant generation from structured possibility into playable form.
+The visual direction centers on a game controller generated through a matrix warp.
 
-This keeps the brand simple and recognizable while still carrying the technical idea behind AIGen Game.
-
-## Positioning
-
-AIGen Game is for creators, developers, and teams who want AI to become part of the game development process itself.
-
-It is not only a prompt-to-game tool. It is a framework for agentic game creation.
+The controller represents game creation. The matrix represents AI-Eigen space. The warp represents instant generation from structured possibility into playable form.
 
 **AIGen Game: Harnessing the AI-Eigen space for precise and instant game generation.**
