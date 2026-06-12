@@ -6,15 +6,15 @@
 
 **Harnessing the AI-Eigen space for precise and instant game generation.**
 
-AIGen Game is an ecosystem for AI-powered game development. It brings together an agentic game-dev framework, a reusable agent workflow orchestrator, and engine-facing automation so game ideas can move from intent to playable systems with speed and control.
+`AIGen Game` is an ecosystem for AI-powered game development. It brings together an agentic game-dev framework, a reusable agent workflow orchestrator, and engine-facing automation so game ideas can move from intent to playable systems with speed and control.
 
 The core idea is simple: game creation is a structured generative space. Mechanics, assets, rules, player experience, production phases, and engine operations are not isolated tasks. They are coordinates in an AI-Eigen space that agents can navigate, transform, and refine.
 
-AIGen Game exists to make that space usable.
+`AIGen Game` exists to make that space usable.
 
 ## What It Is
 
-AIGen Game is not only a prompt-to-game tool. It is an entry point into a small family of projects for **agentic game creation**.
+`AIGen Game` is not only a prompt-to-game tool. It is an entry point into a small family of projects for **agentic game creation**.
 
 The projects have distinct roles:
 
@@ -53,19 +53,19 @@ Intent -> Meta Game -> Skills + Asset Pipelines + Phase Management
 
 ### AI-Eigen Space
 
-AIGen Game uses the idea of an AI-Eigen space as a product metaphor for controlled generation. Instead of asking AI for random game output, the framework aims to guide generation along meaningful game-development dimensions: genre, mechanics, style, pacing, constraints, tools, and production state.
+`AIGen Game` uses the idea of an AI-Eigen space as a product metaphor for controlled generation. Instead of asking AI for random game output, the framework aims to guide generation along meaningful game-development dimensions: genre, mechanics, style, pacing, constraints, tools, and production state.
 
 Precision comes from controlling the space.
 
 ### AI Agents
 
-Agents are focused collaborators. They can reason about design, implementation, assets, testing, review, documentation, or production flow. AIGen Game treats agents as participants in a workflow, not as isolated chat responses.
+Agents are focused collaborators. They can reason about design, implementation, assets, testing, review, documentation, or production flow. `AIGen Game` treats agents as participants in a workflow, not as isolated chat responses.
 
 ### Agentic Workflow
 
 Agentic workflows give structure to AI work. They define what should happen, when it should happen, which agent or tool should handle it, and where human approval belongs.
 
-This is how AIGen Game keeps generation fast without making it random or opaque.
+This is how `AIGen Game` keeps generation fast without making it random or opaque.
 
 ### Skills
 
@@ -75,11 +75,11 @@ They help agents work with consistency and craft across repeated projects.
 
 ### MCP
 
-MCP connects agents to real tools and environments. In AIGen Game, MCP is part of the bridge between agentic reasoning and concrete game-making actions, especially when agents need to inspect, control, or automate external systems.
+MCP connects agents to real tools and environments. In `AIGen Game`, MCP is part of the bridge between agentic reasoning and concrete game-making actions, especially when agents need to inspect, control, or automate external systems.
 
 ## Product Direction
 
-AIGen Game is designed for creators and developers who want AI to become part of the game development process itself.
+`AIGen Game `is designed for creators and developers who want AI to become part of the game development process itself.
 
 The framework should feel:
 
