@@ -1,6 +1,6 @@
 # AIGen Game
 
-![AIGen Game icon](assets/aigen-game-icon-v4-full-matrix-funnel-soft-brighter-lines.png)
+![AIGen Game icon](assets/aigengame-hero.png)
 
 **The AI-powered game dev framework.**
 
