@@ -73,6 +73,12 @@ Skills capture reusable game-dev knowledge: design patterns, art direction, asse
 
 They help agents work with consistency and craft across repeated projects.
 
+### Pipeline
+
+Pipelines turn game assets into integrated, repeatable flows. In `AIGen Game`, a pipeline is not just a generator; it is a controlled path for designing, processing, validating, and feeding assets back into the game.
+
+They make agentic game development more reliable: assets are not produced in isolation, but move through a structured process that agents, skills, tools, and human review can all participate in.
+
 ### MCP
 
 MCP connects agents to real tools and environments. In `AIGen Game`, MCP is part of the bridge between agentic reasoning and concrete game-making actions, especially when agents need to inspect, control, or automate external systems.
